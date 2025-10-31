@@ -4,6 +4,7 @@ import "../styles/global.css";
 import { Image } from 'astro:assets';
 import Portada from '../components/img/portada.png'
 import Layout from '../layouts/Layout.astro';
+import Emma from '../components/img/emma.jpeg'
 ---
 <Layout>
 <div class="min-h-screen bg-[#000001] from-gray-200 via-gray-300 to-gray-200 flex items-center justify-center">
@@ -17,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="relative px-8 -mt-20 fade-up">
       <div class="w-36 h-36 rounded-2xl overflow-hidden border-4 border-[#000001] shadow-xl bg-gray-200">
         <img
-          src="/professional-business-person-in-office.jpg"
+          src={Emma.src}
           alt="Emmanuel Rosales"
           class="w-full h-full object-cover"
         />
@@ -134,7 +135,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="mb-8">
   <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">ESPECIALIDADES</h3>
   <div class="skills-container relative  rounded-lg p-6 border border-zinc-800" style="height: 250px;">
-    {["React", "UX/UI", "Tailwind", "Node.js", "Laravel", "PostgreSQL"].map((skill) => (
+    {["Google adds", "Meta", "SEO", "Analytics", "Branding"].map((skill) => (
       <span
         class="skill-badge px-4 py-2 bg-gray-800 text-gray-300 rounded-full text-sm font-medium border border-gray-700 hover:bg-gray-700"
       >

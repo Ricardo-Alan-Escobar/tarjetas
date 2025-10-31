@@ -4,6 +4,7 @@ import "../styles/global.css";
 import { Image } from 'astro:assets';
 import Portada from '../components/img/portada.png'
 import Layout from '../layouts/Layout.astro';
+import josue from '../components/img/josue.jpeg'
 ---
 <Layout>
 <div class="min-h-screen bg-[#000001] from-gray-200 via-gray-300 to-gray-200 flex items-center justify-center">
@@ -17,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="relative px-8 -mt-20 fade-up">
       <div class="w-36 h-36 rounded-2xl overflow-hidden border-4 border-[#000001] shadow-xl bg-gray-200">
         <img
-          src="/professional-business-person-in-office.jpg"
+          src={josue.src}
           alt="Josue Salvador"
           class="w-full h-full object-cover"
         />
